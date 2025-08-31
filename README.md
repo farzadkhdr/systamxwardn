@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ku" dir="rtl">
 <head>
