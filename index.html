@@ -19,8 +19,7 @@
             overflow-x: hidden;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             position: relative;
         }
@@ -77,24 +76,19 @@
             padding: 20px;
             position: relative;
             z-index: 10;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin-top: 40px;
         }
         
         /* نوسینە سەرەکیەکان */
         .birthday-header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             padding: 25px;
             position: relative;
             background: rgba(15, 20, 45, 0.6);
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            width: 100%;
-            max-width: 900px;
         }
         
         .birthday-title {
@@ -125,9 +119,8 @@
             background-color: rgba(10, 15, 35, 0.9);
             border-radius: 25px;
             padding: 35px 40px;
-            width: 100%;
             max-width: 900px;
-            margin: 0 auto 40px;
+            margin: 0 auto 50px;
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
             border: 1px solid rgba(100, 100, 255, 0.15);
             position: relative;
@@ -173,23 +166,19 @@
         /* بەشێکی گۆرانی */
         .audio-section {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
             padding: 25px;
             position: relative;
             z-index: 10;
-            width: 100%;
-            max-width: 900px;
         }
         
         .audio-player {
             background: linear-gradient(135deg, rgba(30, 35, 70, 0.9), rgba(20, 25, 60, 0.9));
             border-radius: 20px;
             padding: 25px 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: inline-block;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-            width: 100%;
+            max-width: 550px;
             border: 1px solid rgba(100, 100, 255, 0.2);
         }
         
@@ -214,206 +203,49 @@
             100% { transform: scale(1); }
         }
         
-        /* دوگمەی گۆرانی */
-        .music-controls {
-            display: flex;
-            gap: 20px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .music-btn {
+        .play-button {
             background: linear-gradient(to right, #6c5ce7, #a29bfe);
             color: white;
             border: none;
             border-radius: 50px;
-            padding: 15px 35px;
+            padding: 15px 40px;
             font-size: 1.3rem;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
+            margin: 20px auto 0;
             transition: all 0.3s;
             box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
-            min-width: 200px;
         }
         
-        .music-btn:hover {
+        .play-button:hover {
             background: linear-gradient(to right, #5a4fcf, #8a7df5);
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5);
         }
         
-        .music-btn.play {
-            background: linear-gradient(to right, #00b894, #55efc4);
-        }
-        
-        .music-btn.pause {
-            background: linear-gradient(to right, #fd79a8, #ff9fbc);
-        }
-        
-        .music-btn.stop {
-            background: linear-gradient(to right, #e17055, #fab1a0);
+        .youtube-player {
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
         }
         
         .footer-note {
-            margin-top: 20px;
+            margin-top: 25px;
             color: #aaa;
             font-size: 1.1rem;
             text-align: center;
             font-style: italic;
         }
         
-        /* بەشی موهندیس */
-        .engineer-section {
-            margin-top: 40px;
-            padding: 25px;
-            text-align: center;
-            width: 100%;
-            max-width: 900px;
-        }
-        
-        .engineer-container {
-            background: rgba(20, 25, 50, 0.8);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-        }
-        
-        .engineer-title {
-            font-size: 2.2rem;
-            color: #74b9ff;
-            margin-bottom: 25px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .engineer-image {
-            width: 100%;
-            max-width: 700px;
-            height: auto;
-            border-radius: 15px;
-            margin: 20px auto;
-            display: block;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.5s;
-        }
-        
-        .engineer-image:hover {
-            transform: scale(1.02);
-        }
-        
-        .engineer-caption {
-            font-size: 1.8rem;
-            color: #ffdd59;
-            margin-top: 25px;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 221, 89, 0.5);
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 221, 89, 0.2);
-        }
-        
-        /* وێنەی موهندیس */
-        .engineer-placeholder {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .engineer-placeholder::before {
-            content: "";
-            position: absolute;
-            width: 150%;
-            height: 150%;
-            background: conic-gradient(
-                from 0deg,
-                #6c5ce7,
-                #fd79a8,
-                #00b894,
-                #fdcb6e,
-                #6c5ce7
-            );
-            animation: rotate 10s linear infinite;
-        }
-        
-        .engineer-placeholder::after {
-            content: "";
-            position: absolute;
-            width: calc(100% - 8px);
-            height: calc(100% - 8px);
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border-radius: 12px;
-        }
-        
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .engineer-icon {
-            font-size: 6rem;
-            color: #74b9ff;
-            z-index: 2;
-            margin-bottom: 20px;
-        }
-        
-        .engineer-text {
-            font-size: 1.5rem;
-            color: #dfe6e9;
-            z-index: 2;
-            text-align: center;
-            padding: 0 20px;
-        }
-        
-        /* بارتەکانی دەنگ */
-        .volume-slider {
-            width: 100%;
-            max-width: 300px;
-            margin: 20px 0;
-        }
-        
-        .volume-slider input {
-            width: 100%;
-            height: 10px;
-            -webkit-appearance: none;
-            background: linear-gradient(to right, #6c5ce7, #a29bfe);
-            border-radius: 5px;
-            outline: none;
-        }
-        
-        .volume-slider input::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: #ffdd59;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(255, 221, 89, 0.7);
-        }
-        
         /* وەشانی مۆبایل */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
-                margin-top: 10px;
+                margin-top: 20px;
             }
             
             .birthday-title {
@@ -447,28 +279,12 @@
             
             .audio-player {
                 padding: 20px;
+                max-width: 90%;
             }
             
-            .music-btn {
-                padding: 12px 25px;
+            .play-button {
+                padding: 12px 30px;
                 font-size: 1.1rem;
-                min-width: 160px;
-            }
-            
-            .engineer-title {
-                font-size: 1.8rem;
-            }
-            
-            .engineer-caption {
-                font-size: 1.5rem;
-            }
-            
-            .engineer-placeholder {
-                height: 300px;
-            }
-            
-            .engineer-icon {
-                font-size: 4rem;
             }
         }
         
@@ -479,16 +295,6 @@
             
             .message-text {
                 font-size: 1.1rem;
-            }
-            
-            .music-controls {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .music-btn {
-                width: 100%;
-                max-width: 250px;
             }
         }
     </style>
@@ -524,53 +330,18 @@
                     <i class="fas fa-music music-icon"></i> گۆرانییەکی خۆشی بۆت
                 </h3>
                 
-                <!-- دوگمەکانی کۆنتڕۆڵی گۆرانی -->
-                <div class="music-controls">
-                    <button id="play-btn" class="music-btn play">
-                        <i class="fas fa-play"></i> دەستپێکردنی گۆرانی
-                    </button>
-                    <button id="pause-btn" class="music-btn pause">
-                        <i class="fas fa-pause"></i> بوەستاندنی گۆرانی
-                    </button>
-                    <button id="stop-btn" class="music-btn stop">
-                        <i class="fas fa-stop"></i> وەستان لە گۆرانی
-                    </button>
+                <!-- پلەیەری یوتیوب -->
+                <div class="youtube-player" id="youtube-player">
+                    <!-- پلەیەری یوتیوب لێرە دانراوە -->
                 </div>
                 
-                <!-- بارتەی دەنگ -->
-                <div class="volume-slider">
-                    <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.7">
-                    <p style="margin-top: 10px; color: #aaa;">دەنگ</p>
-                </div>
-                
-                <p class="footer-note">کلیک لەسەر دوگمەکە بکە بۆ کاراکردنی گۆرانیەکە</p>
-            </div>
-        </div>
-        
-        <!-- بەشی موهندیس -->
-        <div class="engineer-section">
-            <div class="engineer-container">
-                <h2 class="engineer-title">
-                    <i class="fas fa-user-graduate"></i> موهندیسی پیرۆزبایت
-                </h2>
-                
-                <!-- وێنەی موهندیس -->
-                <div class="engineer-placeholder">
-                    <i class="fas fa-user-tie engineer-icon"></i>
-                    <p class="engineer-text">موهندیسی ئێمە کە ئەم رۆژەی لەدایکبوونەی دروستکردووە</p>
-                </div>
-                
-                <!-- نوسینی خوارەوە -->
-                <div class="engineer-caption">Happy Birthday To You</div>
+                <button id="play-button" class="play-button">
+                    <i class="fas fa-play"></i> گۆرانیەکە پێشکەش بکە
+                </button>
+                <p class="footer-note">گۆرانیەکە خۆکارانە دەستپێدەکات کاتێک پەیامەکە دەستپێدەکات بە نوسین</p>
             </div>
         </div>
     </div>
-
-    <!-- ئاودیۆی پەنهانکراو بۆ کاراکردن -->
-    <audio id="birthday-audio" preload="auto">
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        وێبگەڕەکەت پشتیوانی ئاودیۆ ناکات.
-    </audio>
 
     <script>
         // دروستکردنی ئەستێرەکان
@@ -606,16 +377,28 @@
         // دابەشکردنی پەیامەکە بۆ وشە
         const words = message.split(" ");
         
-        // ئاودیۆی گۆرانی
-        const audio = document.getElementById('birthday-audio');
-        const playBtn = document.getElementById('play-btn');
-        const pauseBtn = document.getElementById('pause-btn');
-        const stopBtn = document.getElementById('stop-btn');
-        const volumeControl = document.getElementById('volume-control');
-        let isPlaying = false;
-        
-        // دانانی دەنگی سەرەتا
-        audio.volume = 0.7;
+        // فەنکشن بۆ دروستکردنی پلەیەری یوتیوب
+        function loadYouTubePlayer() {
+            const playerContainer = document.getElementById('youtube-player');
+            
+            // کۆدی پلەیەری یوتیوب
+            // لە لینکی تۆ https://youtu.be/Cv4SmfK8fZU?si=7-x_zie9qymvht2r
+            // کۆدی ڤیدیۆکە: Cv4SmfK8fZU
+            const videoId = "Cv4SmfK8fZU";
+            
+            playerContainer.innerHTML = `
+                <iframe 
+                    width="100%" 
+                    height="200" 
+                    src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=1&modestbranding=1&rel=0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            `;
+            
+            return playerContainer.querySelector('iframe');
+        }
         
         // فەنکشن بۆ دەرکەوتنی وشەکان
         function displayWords() {
@@ -638,8 +421,8 @@
                     index++;
                     
                     // دەستپێکردنی گۆرانی لەگەڵ دەستپێکردنی نوسینەکە
-                    if (index === 3 && !isPlaying) { // دوای 3 وشە گۆرانی دەستپێدەکات
-                        playAudio();
+                    if (index === 3) { // دوای 3 وشە گۆرانی دەستپێدەکات
+                        startYouTubeVideo();
                     }
                     
                     // کاتی نێوان وشەکان
@@ -652,53 +435,38 @@
             addNextWord();
         }
         
-        // فەنکشنەکانی کاراکردنی ئاودیۆ
-        function playAudio() {
-            audio.play()
-                .then(() => {
-                    isPlaying = true;
-                    playBtn.innerHTML = '<i class="fas fa-play"></i> گۆرانی دەکات';
-                    playBtn.style.background = "linear-gradient(to right, #00b894, #55efc4)";
-                    
-                    // گۆڕینی تێبینی
-                    const note = document.querySelector('.footer-note');
-                    note.innerHTML = "گۆرانیەکە ئێستا دەکات! دەنگەکە ڕێکبخەرەوە";
-                    note.style.color = "#00b894";
-                })
-                .catch(error => {
-                    console.log("هەڵە لە کاراکردنی گۆرانی:", error);
-                    alert("تکایە کلیک لەسەر پەڕەکە بکە پێش دەستپێکردنی گۆرانی یان لینکی یوتیوبەکە بکەرەوە: https://youtu.be/Cv4SmfK8fZU");
-                });
+        // فەنکشن بۆ دەستپێکردنی ڤیدیۆی یوتیوب
+        function startYouTubeVideo() {
+            const iframe = document.querySelector('#youtube-player iframe');
+            if (iframe) {
+                // ئەم کۆدە پێویستی بە APIی یوتیوب هەیە بۆ ئۆتۆپلەی
+                // بەڵام بەشێوەیەکی سادە دەتوانین لینکەکە بەکاربهێنین
+                const playButton = document.getElementById('play-button');
+                playButton.innerHTML = '<i class="fas fa-volume-up"></i> گۆرانیەکە دەنگە';
+                playButton.style.backgroundColor = "#00b894";
+                
+                // نمایشکردنی تێبینی
+                const note = document.querySelector('.footer-note');
+                note.innerHTML = "گۆرانیەکە ئێستا دەنگیە! کلیک لەسەر پلەیەری یوتیوبەکە بکە بۆ گوێگرتن";
+                note.style.color = "#00b894";
+            }
         }
         
-        function pauseAudio() {
-            audio.pause();
-            isPlaying = false;
-            playBtn.innerHTML = '<i class="fas fa-play"></i> دەستپێکردنی گۆرانی';
-            playBtn.style.background = "linear-gradient(to right, #6c5ce7, #a29bfe)";
-        }
-        
-        function stopAudio() {
-            audio.pause();
-            audio.currentTime = 0;
-            isPlaying = false;
-            playBtn.innerHTML = '<i class="fas fa-play"></i> دەستپێکردنی گۆرانی';
-            playBtn.style.background = "linear-gradient(to right, #6c5ce7, #a29bfe)";
+        // فەنکشن بۆ گۆڕینی دۆخی دوگمە
+        function setupPlayButton() {
+            const playButton = document.getElementById('play-button');
+            
+            playButton.addEventListener('click', function() {
+                // ڕاستەوخۆ بەکارهێنەر ببات بۆ ڤیدیۆی یوتیوب
+                window.open("https://youtu.be/Cv4SmfK8fZU?si=7-x_zie9qymvht2r", "_blank");
+            });
         }
         
         // دروستکردنی ئەستێرەکان و دەستپێکردنی نوسینەکە کاتێک پەڕەکە بارکرا
         document.addEventListener('DOMContentLoaded', function() {
             createStars();
-            
-            // بەستنی فەنکشنەکان بە دوگمەکانەوە
-            playBtn.addEventListener('click', playAudio);
-            pauseBtn.addEventListener('click', pauseAudio);
-            stopBtn.addEventListener('click', stopAudio);
-            
-            // بەستنی بارتەی دەنگ
-            volumeControl.addEventListener('input', function() {
-                audio.volume = this.value;
-            });
+            loadYouTubePlayer();
+            setupPlayButton();
             
             // دوای 1.5 چرکە چاوەڕێکردن بۆ نمایشکردنی وشەکان
             setTimeout(displayWords, 1500);
@@ -712,44 +480,6 @@
                     0 0 ${240 + Math.random() * 60}px rgba(249, 243, 213, ${0.2 + Math.random() * 0.2})
                 `;
             }, 3000);
-            
-            // زیادکردنی کلیکی ئۆتۆماتیکی بۆ پەڕەکە (پێویستە بۆ ئۆتۆپلەی لە هەندێک وێبگەڕ)
-            document.body.addEventListener('click', function() {
-                if (!isPlaying && audio.paused) {
-                    // ئەگەر وێبگەڕەکە پێویستی بە کلیکی یەکەم هەبێت
-                    audio.play().then(() => {
-                        audio.pause();
-                        audio.currentTime = 0;
-                    });
-                }
-            });
-            
-            // بەستنی کلیک بۆ وێنەی موهندیس بۆ کردنی گۆرانی
-            const engineerPlaceholder = document.querySelector('.engineer-placeholder');
-            engineerPlaceholder.addEventListener('click', function() {
-                if (!isPlaying) {
-                    playAudio();
-                }
-            });
-            
-            // زیادکردنی گۆڕینی وێنەی موهندیس کاتێک گۆرانی دەکات
-            audio.addEventListener('play', function() {
-                const engineerIcon = document.querySelector('.engineer-icon');
-                engineerIcon.className = 'fas fa-headphones-alt engineer-icon';
-                engineerIcon.style.color = '#00b894';
-                
-                const engineerText = document.querySelector('.engineer-text');
-                engineerText.innerHTML = 'موهندیسی ئێمە گوێ لە گۆرانی رۆژی لەدایکبوونتەوە دەگرێت!';
-            });
-            
-            audio.addEventListener('pause', function() {
-                const engineerIcon = document.querySelector('.engineer-icon');
-                engineerIcon.className = 'fas fa-user-tie engineer-icon';
-                engineerIcon.style.color = '#74b9ff';
-                
-                const engineerText = document.querySelector('.engineer-text');
-                engineerText.innerHTML = 'موهندیسی ئێمە کە ئەم رۆژەی لەدایکبوونەی دروستکردووە';
-            });
         });
     </script>
 </body>
